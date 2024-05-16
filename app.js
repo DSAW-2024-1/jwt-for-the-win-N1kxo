@@ -35,10 +35,6 @@ app.use((req, res, next) => {
 });
 
 // Rutas
-app.get('/', (req, res) => {
-    res.status(200).json({ message: 'Viva Anita!' });
-  });
-
 app.use('/login', authRoutes);
 app.use('/profile', profileRoutes);
 app.use('/form', formRoutes);
